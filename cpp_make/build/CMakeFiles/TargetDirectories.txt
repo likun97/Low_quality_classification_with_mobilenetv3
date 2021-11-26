@@ -1,0 +1,9 @@
+/search/odin/songminghui/Documents/TensorRTcpp/build/CMakeFiles/edit_cache.dir
+/search/odin/songminghui/Documents/TensorRTcpp/build/CMakeFiles/socket_demo.dir
+/search/odin/songminghui/Documents/TensorRTcpp/build/CMakeFiles/trt_infer.dir
+/search/odin/songminghui/Documents/TensorRTcpp/build/CMakeFiles/lq_qo.dir
+/search/odin/songminghui/Documents/TensorRTcpp/build/CMakeFiles/lq_qo_exec.dir
+/search/odin/songminghui/Documents/TensorRTcpp/build/CMakeFiles/lq_porn.dir
+/search/odin/songminghui/Documents/TensorRTcpp/build/CMakeFiles/lqclassify.dir
+/search/odin/songminghui/Documents/TensorRTcpp/build/CMakeFiles/rebuild_cache.dir
+/search/odin/songminghui/Documents/TensorRTcpp/build/CMakeFiles/trt_build.dir

@@ -1,0 +1,79 @@
+[
+{
+  "directory": "/search/odin/songminghui/Documents/TensorRTcpp/build",
+  "command": "/usr/bin/g++  -std=gnu++0x   -I.././include -I../include -I../kernels -I../plugins -I/usr/local/cuda/include -I/search/odin/songminghui/Softwares/TensorRT-7.0.0.11/include -isystem /search/odin/songminghui/Softwares/include -isystem /search/odin/songminghui/Softwares/include/opencv  -DSS_LOG_DEFAULT_MODULE=lq_porn_nausea -g   -std=gnu++11 -o CMakeFiles/socket_demo.dir/scripts/post.cpp.o -c /search/odin/songminghui/Documents/TensorRTcpp/scripts/post.cpp",
+  "file": "/search/odin/songminghui/Documents/TensorRTcpp/scripts/post.cpp"
+},
+
+{
+  "directory": "/search/odin/songminghui/Documents/TensorRTcpp/build",
+  "command": "/usr/bin/g++  -std=gnu++0x   -I.././include -I../include -I../kernels -I../plugins -I/usr/local/cuda/include -I/search/odin/songminghui/Softwares/TensorRT-7.0.0.11/include -isystem /search/odin/songminghui/Softwares/include -isystem /search/odin/songminghui/Softwares/include/opencv  -DSS_LOG_DEFAULT_MODULE=lq_porn_nausea -g   -fopenmp -std=gnu++11 -o CMakeFiles/plant_classify.dir/scripts/demo.cpp.o -c /search/odin/songminghui/Documents/TensorRTcpp/scripts/demo.cpp",
+  "file": "/search/odin/songminghui/Documents/TensorRTcpp/scripts/demo.cpp"
+},
+
+{
+  "directory": "/search/odin/songminghui/Documents/TensorRTcpp/build",
+  "command": "/usr/bin/g++  -std=gnu++0x   -I.././include -I../include -I../kernels -I../plugins -I/usr/local/cuda/include -I/search/odin/songminghui/Softwares/TensorRT-7.0.0.11/include -isystem /search/odin/songminghui/Softwares/include -isystem /search/odin/songminghui/Softwares/include/opencv  -DSS_LOG_DEFAULT_MODULE=lq_porn_nausea -g   -fopenmp -std=gnu++11 -o CMakeFiles/plant_classify.dir/qo/configuration.cpp.o -c /search/odin/songminghui/Documents/TensorRTcpp/qo/configuration.cpp",
+  "file": "/search/odin/songminghui/Documents/TensorRTcpp/qo/configuration.cpp"
+},
+
+{
+  "directory": "/search/odin/songminghui/Documents/TensorRTcpp/build",
+  "command": "/usr/bin/g++  -std=gnu++0x   -I.././include -I../include -I../kernels -I../plugins -I/usr/local/cuda/include -I/search/odin/songminghui/Softwares/TensorRT-7.0.0.11/include -isystem /search/odin/songminghui/Softwares/include -isystem /search/odin/songminghui/Softwares/include/opencv  -DSS_LOG_DEFAULT_MODULE=lq_porn_nausea -g   -fopenmp -std=gnu++11 -o CMakeFiles/plant_classify.dir/qo/qo_manager.cpp.o -c /search/odin/songminghui/Documents/TensorRTcpp/qo/qo_manager.cpp",
+  "file": "/search/odin/songminghui/Documents/TensorRTcpp/qo/qo_manager.cpp"
+},
+
+{
+  "directory": "/search/odin/songminghui/Documents/TensorRTcpp/build",
+  "command": "/usr/bin/g++  -std=gnu++0x   -I.././include -I../include -I../kernels -I../plugins -I/usr/local/cuda/include -I/search/odin/songminghui/Softwares/TensorRT-7.0.0.11/include -isystem /search/odin/songminghui/Softwares/include -isystem /search/odin/songminghui/Softwares/include/opencv  -DSS_LOG_DEFAULT_MODULE=lq_porn_nausea -g   -fopenmp -std=gnu++11 -o CMakeFiles/plant_classify.dir/qo/base_task.cpp.o -c /search/odin/songminghui/Documents/TensorRTcpp/qo/base_task.cpp",
+  "file": "/search/odin/songminghui/Documents/TensorRTcpp/qo/base_task.cpp"
+},
+
+{
+  "directory": "/search/odin/songminghui/Documents/TensorRTcpp/build",
+  "command": "/usr/bin/g++  -std=gnu++0x   -I.././include -I../include -I../kernels -I../plugins -I/usr/local/cuda/include -I/search/odin/songminghui/Softwares/TensorRT-7.0.0.11/include -isystem /search/odin/songminghui/Softwares/include -isystem /search/odin/songminghui/Softwares/include/opencv  -DSS_LOG_DEFAULT_MODULE=lq_porn_nausea -g   -fopenmp -std=gnu++11 -o CMakeFiles/plant_classify.dir/qo/qo_base.cpp.o -c /search/odin/songminghui/Documents/TensorRTcpp/qo/qo_base.cpp",
+  "file": "/search/odin/songminghui/Documents/TensorRTcpp/qo/qo_base.cpp"
+},
+
+{
+  "directory": "/search/odin/songminghui/Documents/TensorRTcpp/build",
+  "command": "/usr/bin/g++  -std=gnu++0x   -I.././include -I../include -I../kernels -I../plugins -I/usr/local/cuda/include -I/search/odin/songminghui/Softwares/TensorRT-7.0.0.11/include -isystem /search/odin/songminghui/Softwares/include -isystem /search/odin/songminghui/Softwares/include/opencv  -DSS_LOG_DEFAULT_MODULE=lq_porn_nausea -g   -fopenmp -std=gnu++11 -o CMakeFiles/plant_classify.dir/qo/reply_manager.cpp.o -c /search/odin/songminghui/Documents/TensorRTcpp/qo/reply_manager.cpp",
+  "file": "/search/odin/songminghui/Documents/TensorRTcpp/qo/reply_manager.cpp"
+},
+
+{
+  "directory": "/search/odin/songminghui/Documents/TensorRTcpp/build",
+  "command": "/usr/bin/g++  -std=gnu++0x   -I.././include -I../include -I../kernels -I../plugins -I/usr/local/cuda/include -I/search/odin/songminghui/Softwares/TensorRT-7.0.0.11/include -isystem /search/odin/songminghui/Softwares/include -isystem /search/odin/songminghui/Softwares/include/opencv  -DSS_LOG_DEFAULT_MODULE=lq_porn_nausea -g   -fopenmp -std=gnu++11 -o CMakeFiles/plant_classify.dir/qo/request_manager.cpp.o -c /search/odin/songminghui/Documents/TensorRTcpp/qo/request_manager.cpp",
+  "file": "/search/odin/songminghui/Documents/TensorRTcpp/qo/request_manager.cpp"
+},
+
+{
+  "directory": "/search/odin/songminghui/Documents/TensorRTcpp/build",
+  "command": "/usr/bin/g++  -std=gnu++0x   -I.././include -I../include -I../kernels -I../plugins -I/usr/local/cuda/include -I/search/odin/songminghui/Softwares/TensorRT-7.0.0.11/include -isystem /search/odin/songminghui/Softwares/include -isystem /search/odin/songminghui/Softwares/include/opencv  -DSS_LOG_DEFAULT_MODULE=lq_porn_nausea -g   -fopenmp -std=gnu++11 -o CMakeFiles/plant_classify.dir/qo/sys.cpp.o -c /search/odin/songminghui/Documents/TensorRTcpp/qo/sys.cpp",
+  "file": "/search/odin/songminghui/Documents/TensorRTcpp/qo/sys.cpp"
+},
+
+{
+  "directory": "/search/odin/songminghui/Documents/TensorRTcpp/build",
+  "command": "/usr/bin/g++  -std=gnu++0x   -I.././include -I../include -I../kernels -I../plugins -I/usr/local/cuda/include -I/search/odin/songminghui/Softwares/TensorRT-7.0.0.11/include -isystem /search/odin/songminghui/Softwares/include -isystem /search/odin/songminghui/Softwares/include/opencv  -DSS_LOG_DEFAULT_MODULE=lq_porn_nausea -g   -fopenmp -std=gnu++11 -o CMakeFiles/plant_classify.dir/qo/time_manager.cpp.o -c /search/odin/songminghui/Documents/TensorRTcpp/qo/time_manager.cpp",
+  "file": "/search/odin/songminghui/Documents/TensorRTcpp/qo/time_manager.cpp"
+},
+
+{
+  "directory": "/search/odin/songminghui/Documents/TensorRTcpp/build",
+  "command": "/usr/bin/g++  -std=gnu++0x   -I.././include -I../include -I../kernels -I../plugins -I/usr/local/cuda/include -I/search/odin/songminghui/Softwares/TensorRT-7.0.0.11/include -isystem /search/odin/songminghui/Softwares/include -isystem /search/odin/songminghui/Softwares/include/opencv  -DSS_LOG_DEFAULT_MODULE=lq_porn_nausea -g   -fopenmp -std=gnu++11 -o CMakeFiles/plant_classify.dir/src/plantclassification.cpp.o -c /search/odin/songminghui/Documents/TensorRTcpp/src/plantclassification.cpp",
+  "file": "/search/odin/songminghui/Documents/TensorRTcpp/src/plantclassification.cpp"
+},
+
+{
+  "directory": "/search/odin/songminghui/Documents/TensorRTcpp/build",
+  "command": "/usr/bin/g++  -std=gnu++0x   -I.././include -I../include -I../kernels -I../plugins -I/usr/local/cuda/include -I/search/odin/songminghui/Softwares/TensorRT-7.0.0.11/include -isystem /search/odin/songminghui/Softwares/include -isystem /search/odin/songminghui/Softwares/include/opencv  -DSS_LOG_DEFAULT_MODULE=lq_porn_nausea -g   -fopenmp -std=gnu++11 -o CMakeFiles/plant_classify.dir/src/logger.cpp.o -c /search/odin/songminghui/Documents/TensorRTcpp/src/logger.cpp",
+  "file": "/search/odin/songminghui/Documents/TensorRTcpp/src/logger.cpp"
+},
+
+{
+  "directory": "/search/odin/songminghui/Documents/TensorRTcpp/build",
+  "command": "/usr/bin/g++  -std=gnu++0x   -I.././include -I../include -I../kernels -I../plugins -I/usr/local/cuda/include -I/search/odin/songminghui/Softwares/TensorRT-7.0.0.11/include -isystem /search/odin/songminghui/Softwares/include -isystem /search/odin/songminghui/Softwares/include/opencv  -DSS_LOG_DEFAULT_MODULE=lq_porn_nausea -g   -fopenmp -std=gnu++11 -o CMakeFiles/plant_classify.dir/src/utils.cpp.o -c /search/odin/songminghui/Documents/TensorRTcpp/src/utils.cpp",
+  "file": "/search/odin/songminghui/Documents/TensorRTcpp/src/utils.cpp"
+}
+]

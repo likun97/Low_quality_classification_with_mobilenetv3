@@ -1,0 +1,1 @@
+/usr/bin/g++  -std=gnu++0x -fPIC -DSS_LOG_DEFAULT_MODULE=lq_porn_nausea -g  -shared -Wl,-soname,liblqclassify.so -o liblqclassify.so CMakeFiles/lqclassify.dir/src/lqclassify.cpp.o CMakeFiles/lqclassify.dir/plugins/pluginLayer.cpp.o CMakeFiles/lqclassify.dir/src/utils.cpp.o CMakeFiles/lqclassify.dir/src/logger.cpp.o   -L/usr/local/cuda/lib64 

@@ -1,0 +1,429 @@
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /search/odin/songminghui/Documents/TensorRTcpp/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_887cf/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_887cf.dir/build.make CMakeFiles/cmTC_887cf.dir/build
+gmake[1]: Entering directory `/search/odin/songminghui/Documents/TensorRTcpp/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_887cf.dir/src.c.o
+/opt/rh/devtoolset-7/root/usr/bin/gcc  -std=gnu99   -fPIC -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_887cf.dir/src.c.o   -c /search/odin/songminghui/Documents/TensorRTcpp/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_887cf
+/search/odin/songminghui/Softwares/bin/cmake -E cmake_link_script CMakeFiles/cmTC_887cf.dir/link.txt --verbose=1
+/opt/rh/devtoolset-7/root/usr/bin/gcc  -std=gnu99 -fPIC -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_887cf.dir/src.c.o  -o cmTC_887cf 
+CMakeFiles/cmTC_887cf.dir/src.c.o: In function `main':
+src.c:(.text+0x2f): undefined reference to `pthread_create'
+src.c:(.text+0x3b): undefined reference to `pthread_detach'
+src.c:(.text+0x4c): undefined reference to `pthread_join'
+src.c:(.text+0x60): undefined reference to `pthread_atfork'
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [cmTC_887cf] Error 1
+gmake[1]: Leaving directory `/search/odin/songminghui/Documents/TensorRTcpp/build/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_887cf/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /search/odin/songminghui/Documents/TensorRTcpp/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_dd021/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_dd021.dir/build.make CMakeFiles/cmTC_dd021.dir/build
+gmake[1]: Entering directory `/search/odin/songminghui/Documents/TensorRTcpp/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_dd021.dir/CheckFunctionExists.c.o
+/opt/rh/devtoolset-7/root/usr/bin/gcc  -std=gnu99   -fPIC -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_dd021.dir/CheckFunctionExists.c.o   -c /search/odin/songminghui/Softwares/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_dd021
+/search/odin/songminghui/Softwares/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dd021.dir/link.txt --verbose=1
+/opt/rh/devtoolset-7/root/usr/bin/gcc  -std=gnu99 -fPIC -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_dd021.dir/CheckFunctionExists.c.o  -o cmTC_dd021  -lpthreads 
+/opt/rh/devtoolset-7/root/usr/libexec/gcc/x86_64-redhat-linux/7/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [cmTC_dd021] Error 1
+gmake[1]: Leaving directory `/search/odin/songminghui/Documents/TensorRTcpp/build/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_dd021/fast] Error 2
+
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /search/odin/songminghui/Documents/TensorRTcpp/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_f30f2/fast && gmake[1]: Entering directory `/search/odin/songminghui/Documents/TensorRTcpp/build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_f30f2.dir/build.make CMakeFiles/cmTC_f30f2.dir/build
+gmake[2]: Entering directory `/search/odin/songminghui/Documents/TensorRTcpp/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f30f2.dir/src.c.o
+/opt/rh/devtoolset-7/root/usr/bin/gcc  -std=gnu99   -fPIC -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_f30f2.dir/src.c.o   -c /search/odin/songminghui/Documents/TensorRTcpp/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_f30f2
+/search/odin/songminghui/Softwares/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f30f2.dir/link.txt --verbose=1
+/opt/rh/devtoolset-7/root/usr/bin/gcc  -std=gnu99 -fPIC -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_f30f2.dir/src.c.o  -o cmTC_f30f2 
+CMakeFiles/cmTC_f30f2.dir/src.c.o: In function `main':
+src.c:(.text+0x2f): undefined reference to `pthread_create'
+src.c:(.text+0x3b): undefined reference to `pthread_detach'
+src.c:(.text+0x4c): undefined reference to `pthread_join'
+src.c:(.text+0x60): undefined reference to `pthread_atfork'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [cmTC_f30f2] Error 1
+gmake[2]: Leaving directory `/search/odin/songminghui/Documents/TensorRTcpp/build/CMakeFiles/CMakeTmp'
+gmake[1]: *** [cmTC_f30f2/fast] Error 2
+gmake[1]: Leaving directory `/search/odin/songminghui/Documents/TensorRTcpp/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /search/odin/songminghui/Documents/TensorRTcpp/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_2ba57/fast && gmake[1]: Entering directory `/search/odin/songminghui/Documents/TensorRTcpp/build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_2ba57.dir/build.make CMakeFiles/cmTC_2ba57.dir/build
+gmake[2]: Entering directory `/search/odin/songminghui/Documents/TensorRTcpp/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2ba57.dir/CheckFunctionExists.c.o
+/opt/rh/devtoolset-7/root/usr/bin/gcc  -std=gnu99   -fPIC -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_2ba57.dir/CheckFunctionExists.c.o   -c /search/odin/songminghui/Softwares/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_2ba57
+/search/odin/songminghui/Softwares/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2ba57.dir/link.txt --verbose=1
+/opt/rh/devtoolset-7/root/usr/bin/gcc  -std=gnu99 -fPIC -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_2ba57.dir/CheckFunctionExists.c.o  -o cmTC_2ba57  -lpthreads 
+/opt/rh/devtoolset-7/root/usr/libexec/gcc/x86_64-redhat-linux/7/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [cmTC_2ba57] Error 1
+gmake[2]: Leaving directory `/search/odin/songminghui/Documents/TensorRTcpp/build/CMakeFiles/CMakeTmp'
+gmake[1]: *** [cmTC_2ba57/fast] Error 2
+gmake[1]: Leaving directory `/search/odin/songminghui/Documents/TensorRTcpp/build/CMakeFiles/CMakeTmp'
+
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /search/odin/songminghui/Documents/TensorRTcpp/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_99c67/fast && gmake[1]: Entering directory `/search/odin/songminghui/Documents/TensorRTcpp/build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_99c67.dir/build.make CMakeFiles/cmTC_99c67.dir/build
+gmake[2]: Entering directory `/search/odin/songminghui/Documents/TensorRTcpp/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_99c67.dir/src.c.o
+/opt/rh/devtoolset-7/root/usr/bin/gcc  -std=gnu99   -fPIC -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_99c67.dir/src.c.o   -c /search/odin/songminghui/Documents/TensorRTcpp/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_99c67
+/search/odin/songminghui/Softwares/bin/cmake -E cmake_link_script CMakeFiles/cmTC_99c67.dir/link.txt --verbose=1
+/opt/rh/devtoolset-7/root/usr/bin/gcc  -std=gnu99 -fPIC -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_99c67.dir/src.c.o  -o cmTC_99c67 
+CMakeFiles/cmTC_99c67.dir/src.c.o: In function `main':
+src.c:(.text+0x2f): undefined reference to `pthread_create'
+src.c:(.text+0x3b): undefined reference to `pthread_detach'
+src.c:(.text+0x4c): undefined reference to `pthread_join'
+src.c:(.text+0x60): undefined reference to `pthread_atfork'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [cmTC_99c67] Error 1
+gmake[2]: Leaving directory `/search/odin/songminghui/Documents/TensorRTcpp/build/CMakeFiles/CMakeTmp'
+gmake[1]: *** [cmTC_99c67/fast] Error 2
+gmake[1]: Leaving directory `/search/odin/songminghui/Documents/TensorRTcpp/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /search/odin/songminghui/Documents/TensorRTcpp/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_3aa14/fast && gmake[1]: Entering directory `/search/odin/songminghui/Documents/TensorRTcpp/build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_3aa14.dir/build.make CMakeFiles/cmTC_3aa14.dir/build
+gmake[2]: Entering directory `/search/odin/songminghui/Documents/TensorRTcpp/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3aa14.dir/CheckFunctionExists.c.o
+/opt/rh/devtoolset-7/root/usr/bin/gcc  -std=gnu99   -fPIC -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_3aa14.dir/CheckFunctionExists.c.o   -c /search/odin/songminghui/Softwares/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_3aa14
+/search/odin/songminghui/Softwares/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3aa14.dir/link.txt --verbose=1
+/opt/rh/devtoolset-7/root/usr/bin/gcc  -std=gnu99 -fPIC -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_3aa14.dir/CheckFunctionExists.c.o  -o cmTC_3aa14  -lpthreads 
+/opt/rh/devtoolset-7/root/usr/libexec/gcc/x86_64-redhat-linux/7/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [cmTC_3aa14] Error 1
+gmake[2]: Leaving directory `/search/odin/songminghui/Documents/TensorRTcpp/build/CMakeFiles/CMakeTmp'
+gmake[1]: *** [cmTC_3aa14/fast] Error 2
+gmake[1]: Leaving directory `/search/odin/songminghui/Documents/TensorRTcpp/build/CMakeFiles/CMakeTmp'
+
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /search/odin/songminghui/Documents/TensorRTcpp/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_ea38a/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_ea38a.dir/build.make CMakeFiles/cmTC_ea38a.dir/build
+gmake[1]: Entering directory `/search/odin/songminghui/Documents/TensorRTcpp/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ea38a.dir/src.c.o
+/usr/bin/gcc  -std=gnu99   -fPIC -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_ea38a.dir/src.c.o   -c /search/odin/songminghui/Documents/TensorRTcpp/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_ea38a
+/search/odin/songminghui/Softwares/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ea38a.dir/link.txt --verbose=1
+/usr/bin/gcc  -std=gnu99 -fPIC -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_ea38a.dir/src.c.o  -o cmTC_ea38a 
+CMakeFiles/cmTC_ea38a.dir/src.c.o: In function `main':
+src.c:(.text+0x2f): undefined reference to `pthread_create'
+src.c:(.text+0x3b): undefined reference to `pthread_detach'
+src.c:(.text+0x4c): undefined reference to `pthread_join'
+src.c:(.text+0x60): undefined reference to `pthread_atfork'
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [cmTC_ea38a] Error 1
+gmake[1]: Leaving directory `/search/odin/songminghui/Documents/TensorRTcpp/build/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_ea38a/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /search/odin/songminghui/Documents/TensorRTcpp/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_61e30/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_61e30.dir/build.make CMakeFiles/cmTC_61e30.dir/build
+gmake[1]: Entering directory `/search/odin/songminghui/Documents/TensorRTcpp/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_61e30.dir/CheckFunctionExists.c.o
+/usr/bin/gcc  -std=gnu99   -fPIC -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_61e30.dir/CheckFunctionExists.c.o   -c /search/odin/songminghui/Softwares/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_61e30
+/search/odin/songminghui/Softwares/bin/cmake -E cmake_link_script CMakeFiles/cmTC_61e30.dir/link.txt --verbose=1
+/usr/bin/gcc  -std=gnu99 -fPIC -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_61e30.dir/CheckFunctionExists.c.o  -o cmTC_61e30  -lpthreads 
+/search/odin/songminghui/Softwares/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [cmTC_61e30] Error 1
+gmake[1]: Leaving directory `/search/odin/songminghui/Documents/TensorRTcpp/build/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_61e30/fast] Error 2
+
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /search/odin/songminghui/Documents/TensorRTcpp/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_bf0b2/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_bf0b2.dir/build.make CMakeFiles/cmTC_bf0b2.dir/build
+gmake[1]: Entering directory `/search/odin/songminghui/Documents/TensorRTcpp/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_bf0b2.dir/src.c.o
+/usr/bin/gcc  -std=gnu99   -fPIC -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_bf0b2.dir/src.c.o   -c /search/odin/songminghui/Documents/TensorRTcpp/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_bf0b2
+/search/odin/songminghui/Softwares/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bf0b2.dir/link.txt --verbose=1
+/usr/bin/gcc  -std=gnu99 -fPIC -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_bf0b2.dir/src.c.o  -o cmTC_bf0b2 
+CMakeFiles/cmTC_bf0b2.dir/src.c.o: In function `main':
+src.c:(.text+0x2f): undefined reference to `pthread_create'
+src.c:(.text+0x3b): undefined reference to `pthread_detach'
+src.c:(.text+0x4c): undefined reference to `pthread_join'
+src.c:(.text+0x60): undefined reference to `pthread_atfork'
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [cmTC_bf0b2] Error 1
+gmake[1]: Leaving directory `/search/odin/songminghui/Documents/TensorRTcpp/build/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_bf0b2/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /search/odin/songminghui/Documents/TensorRTcpp/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_0a468/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_0a468.dir/build.make CMakeFiles/cmTC_0a468.dir/build
+gmake[1]: Entering directory `/search/odin/songminghui/Documents/TensorRTcpp/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0a468.dir/CheckFunctionExists.c.o
+/usr/bin/gcc  -std=gnu99   -fPIC -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_0a468.dir/CheckFunctionExists.c.o   -c /search/odin/songminghui/Softwares/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_0a468
+/search/odin/songminghui/Softwares/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0a468.dir/link.txt --verbose=1
+/usr/bin/gcc  -std=gnu99 -fPIC -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_0a468.dir/CheckFunctionExists.c.o  -o cmTC_0a468  -lpthreads 
+/search/odin/songminghui/Softwares/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [cmTC_0a468] Error 1
+gmake[1]: Leaving directory `/search/odin/songminghui/Documents/TensorRTcpp/build/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_0a468/fast] Error 2
+
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /search/odin/songminghui/Documents/TensorRTcpp/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_1ebff/fast && gmake[1]: Entering directory `/search/odin/songminghui/Documents/TensorRTcpp/build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_1ebff.dir/build.make CMakeFiles/cmTC_1ebff.dir/build
+gmake[2]: Entering directory `/search/odin/songminghui/Documents/TensorRTcpp/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1ebff.dir/src.c.o
+/usr/bin/gcc  -std=gnu99   -fPIC -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_1ebff.dir/src.c.o   -c /search/odin/songminghui/Documents/TensorRTcpp/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_1ebff
+/search/odin/songminghui/Softwares/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1ebff.dir/link.txt --verbose=1
+/usr/bin/gcc  -std=gnu99 -fPIC -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_1ebff.dir/src.c.o  -o cmTC_1ebff 
+CMakeFiles/cmTC_1ebff.dir/src.c.o: In function `main':
+src.c:(.text+0x2f): undefined reference to `pthread_create'
+src.c:(.text+0x3b): undefined reference to `pthread_detach'
+src.c:(.text+0x4c): undefined reference to `pthread_join'
+src.c:(.text+0x60): undefined reference to `pthread_atfork'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [cmTC_1ebff] Error 1
+gmake[2]: Leaving directory `/search/odin/songminghui/Documents/TensorRTcpp/build/CMakeFiles/CMakeTmp'
+gmake[1]: *** [cmTC_1ebff/fast] Error 2
+gmake[1]: Leaving directory `/search/odin/songminghui/Documents/TensorRTcpp/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /search/odin/songminghui/Documents/TensorRTcpp/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_579f0/fast && gmake[1]: Entering directory `/search/odin/songminghui/Documents/TensorRTcpp/build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_579f0.dir/build.make CMakeFiles/cmTC_579f0.dir/build
+gmake[2]: Entering directory `/search/odin/songminghui/Documents/TensorRTcpp/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_579f0.dir/CheckFunctionExists.c.o
+/usr/bin/gcc  -std=gnu99   -fPIC -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_579f0.dir/CheckFunctionExists.c.o   -c /search/odin/songminghui/Softwares/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_579f0
+/search/odin/songminghui/Softwares/bin/cmake -E cmake_link_script CMakeFiles/cmTC_579f0.dir/link.txt --verbose=1
+/usr/bin/gcc  -std=gnu99 -fPIC -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_579f0.dir/CheckFunctionExists.c.o  -o cmTC_579f0  -lpthreads 
+/search/odin/songminghui/Softwares/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [cmTC_579f0] Error 1
+gmake[2]: Leaving directory `/search/odin/songminghui/Documents/TensorRTcpp/build/CMakeFiles/CMakeTmp'
+gmake[1]: *** [cmTC_579f0/fast] Error 2
+gmake[1]: Leaving directory `/search/odin/songminghui/Documents/TensorRTcpp/build/CMakeFiles/CMakeTmp'
+
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /search/odin/songminghui/Documents/TensorRTcpp/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_b09d2/fast && gmake[1]: Entering directory `/search/odin/songminghui/Documents/TensorRTcpp/build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_b09d2.dir/build.make CMakeFiles/cmTC_b09d2.dir/build
+gmake[2]: Entering directory `/search/odin/songminghui/Documents/TensorRTcpp/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b09d2.dir/src.c.o
+/usr/bin/gcc  -std=gnu99   -fPIC -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_b09d2.dir/src.c.o   -c /search/odin/songminghui/Documents/TensorRTcpp/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_b09d2
+/search/odin/songminghui/Softwares/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b09d2.dir/link.txt --verbose=1
+/usr/bin/gcc  -std=gnu99 -fPIC -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_b09d2.dir/src.c.o  -o cmTC_b09d2 
+CMakeFiles/cmTC_b09d2.dir/src.c.o: In function `main':
+src.c:(.text+0x2f): undefined reference to `pthread_create'
+src.c:(.text+0x3b): undefined reference to `pthread_detach'
+src.c:(.text+0x4c): undefined reference to `pthread_join'
+src.c:(.text+0x60): undefined reference to `pthread_atfork'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [cmTC_b09d2] Error 1
+gmake[2]: Leaving directory `/search/odin/songminghui/Documents/TensorRTcpp/build/CMakeFiles/CMakeTmp'
+gmake[1]: *** [cmTC_b09d2/fast] Error 2
+gmake[1]: Leaving directory `/search/odin/songminghui/Documents/TensorRTcpp/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /search/odin/songminghui/Documents/TensorRTcpp/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_87b09/fast && gmake[1]: Entering directory `/search/odin/songminghui/Documents/TensorRTcpp/build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_87b09.dir/build.make CMakeFiles/cmTC_87b09.dir/build
+gmake[2]: Entering directory `/search/odin/songminghui/Documents/TensorRTcpp/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_87b09.dir/CheckFunctionExists.c.o
+/usr/bin/gcc  -std=gnu99   -fPIC -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_87b09.dir/CheckFunctionExists.c.o   -c /search/odin/songminghui/Softwares/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_87b09
+/search/odin/songminghui/Softwares/bin/cmake -E cmake_link_script CMakeFiles/cmTC_87b09.dir/link.txt --verbose=1
+/usr/bin/gcc  -std=gnu99 -fPIC -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_87b09.dir/CheckFunctionExists.c.o  -o cmTC_87b09  -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [cmTC_87b09] Error 1
+gmake[2]: Leaving directory `/search/odin/songminghui/Documents/TensorRTcpp/build/CMakeFiles/CMakeTmp'
+gmake[1]: *** [cmTC_87b09/fast] Error 2
+gmake[1]: Leaving directory `/search/odin/songminghui/Documents/TensorRTcpp/build/CMakeFiles/CMakeTmp'
+
+
+

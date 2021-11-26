@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/search/odin/songminghui/Documents/TensorRTcpp/opencv/include/opencv2/highgui/highgui.hpp
+opencv2/core/core.hpp
+/search/odin/songminghui/Documents/TensorRTcpp/opencv/include/opencv2/highgui/opencv2/core/core.hpp
+opencv2/highgui/highgui_c.h
+/search/odin/songminghui/Documents/TensorRTcpp/opencv/include/opencv2/highgui/opencv2/highgui/highgui_c.h
+
+/search/odin/songminghui/Documents/TensorRTcpp/opencv/include/opencv2/imgproc/imgproc.hpp
+opencv2/core/core.hpp
+/search/odin/songminghui/Documents/TensorRTcpp/opencv/include/opencv2/imgproc/opencv2/core/core.hpp
+opencv2/imgproc/types_c.h
+/search/odin/songminghui/Documents/TensorRTcpp/opencv/include/opencv2/imgproc/opencv2/imgproc/types_c.h
+
+/search/odin/songminghui/Documents/TensorRTcpp/scripts/post.cpp
+iostream
+-
+fstream
+-
+string
+-
+sys/socket.h
+-
+arpa/inet.h
+-
+/search/odin/songminghui/Documents/TensorRTcpp/opencv/include/opencv2/imgproc/imgproc.hpp
+-
+/search/odin/songminghui/Documents/TensorRTcpp/opencv/include/opencv2/highgui/highgui.hpp
+-
+jsoncpp/json/json.h
+-
+jsoncpp/json/reader.h
+-
+jsoncpp/json/value.h
+-
+
